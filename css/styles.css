@@ -1,0 +1,232 @@
+.container{
+position: absolute;
+height:600px;
+width:400px;
+top: 50%;
+left:50%;
+transform: translate(-50%, -50%);   
+overflow: hidden;
+}
+.book-bg{
+    position: relative;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: -8;
+}
+
+.circle-1{
+    position: relative;
+    top:-263%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+    height:20px;
+    width:20px;
+    background-color: #F07645;
+    border-radius: 50%;
+    z-index: 10;
+    animation: flicker 6s infinite;
+}
+
+.circle-2{
+    position: relative;
+    top:-249%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+    height:12px;
+    width:12px;
+    background-color: #F07645;
+    border-radius: 50%;
+    z-index: 2;
+    animation: flicker 7s infinite;
+}
+
+.circle-3{
+    position: relative;
+    top:-255%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    height:28px;
+    width:28px;
+    background-color: #F07645;
+    border-radius: 50%;
+    z-index: 2;
+    animation: flicker 8s infinite;
+}
+
+.circle-4{
+    position: relative;
+    top:-301%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    height:18px;
+    width:18px;
+    background-color: #F07645;
+    border-radius: 50%;
+    z-index: 2;
+    animation: flicker 3s infinite;
+}
+
+.circle-5{
+    position: relative;
+    top:-328%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    height:18px;
+    width:18px;
+    background-color: #F07645;
+    border-radius: 50%;
+    z-index: 2;
+    animation: flicker 3s infinite;
+}
+
+.circle-6{
+    position: relative;
+    top:-328%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+    height: 24px;
+    width:24px;
+    background-color: #F07645;
+    border-radius: 50%;
+    z-index: 2;
+    animation: flicker 4s infinite;
+}
+
+.circle-7{
+    position: relative;
+    top:-286%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+    height: 20px;
+    width: 20px;
+    background-color: #F07645;
+    border-radius: 50%;
+    z-index: 2;
+    animation: flicker 6s infinite;
+}
+
+.circle-8{
+    position: relative;
+    top:-319%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    height: 24px;
+    width: 24px;
+    background-color: #F07645;
+    border-radius: 50%;
+    z-index: 2;
+    animation: flicker 4s infinite;
+}
+
+.circle-9{
+    position: relative;
+    top:-292%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    height: 19px;
+    width: 19px;
+    background-color:  #F07645;
+    border-radius: 50%;
+    z-index: 2;
+    animation: flicker 5s infinite;
+}
+
+
+.plushie{
+    position: relative;
+    top: -160%;
+    left:48%;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    z-index: 5;
+}
+
+.plushie:hover{
+animation: tilt-shaking 2s  linear infinite;
+}
+
+@keyframes tilt-shaking{
+    0% {transform: translate(-50%, -50%) rotate(4deg) ;}
+    50% {transform: translate(-50%, -50%) rotate(-8deg);}
+    70% {transform: translate(-50%, -50%) rotate(0deg) ;}
+    100% {transform: translate(-50%, -50%) rotate(4deg) ;}
+
+}
+
+.subtitle{
+position: relative;
+top: -50%;
+left:50%;
+transform: translate(-50%, -50%);
+animation: slide-right-1 3s forwards;
+z-index: -3;
+}
+
+.author{
+ position: relative;
+    top: -299.8%;
+    left: -410%;
+    transform: translate(-50%, -50%);
+    transform: skew(-9deg);
+    transform: rotate(-7deg);
+    line-height: 1em;
+    letter-spacing: .08em;
+    font-family: "acumin-pro-condensed", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 87px;
+    color:white;
+    z-index: 3;
+    animation: slide-right-2 4s forwards;
+    animation-delay: 2s;
+}
+
+
+.title{
+    position: relative;
+    top: -220%;
+    left:-410px;
+    transform: translate(-50%, -50%);
+    transform: skew(-8deg);
+    transform: rotate(-5deg);
+    font-family: "acumin-pro-condensed", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 72px;
+    color:white;
+    z-index: 3;
+    animation: slide-right-3 6s forwards;
+    animation-delay: 3s;
+}
+
+
+
+
+@keyframes slide-right-1{
+    
+    0% { left:-410px; }
+    100% { left:200px; }
+
+}
+
+@keyframes slide-right-2{
+    
+    0% { left:-410px; }
+    100% { left:56px; }
+
+}
+
+@keyframes slide-right-3{
+    0% { left:-410px; }
+    100% { left:35px; }
+}
+
+
+
+
+@keyframes flicker{
+    0% {transform: scale(0);}
+    50% {transform: scale(1,1);}
+    100%{transform: scale(0);}
+}
