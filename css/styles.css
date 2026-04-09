@@ -135,10 +135,10 @@ overflow: hidden;
 
 .plushie{
     position: relative;
-    top: -160%;
+    top: -158%;
     left:48%;
     transform: translate(-50%, -50%);
-    transform-origin: 50% 50%;
+    transform-origin: 50% 70%;
     z-index: 5;
 }
 
